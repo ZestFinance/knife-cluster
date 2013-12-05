@@ -4,4 +4,3 @@ source 'https://rubygems.org'
 gemspec
 
 gem "knife-instance", :git => 'https://github.com/ZestFinance/knife-instance.git'
-gem "chef"
