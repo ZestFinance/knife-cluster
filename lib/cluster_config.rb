@@ -15,7 +15,7 @@ module ClusterConfig
 
   def default
     @@default ||= {
-        region: "us-east-1",
+        region: "",
         domain: ""
     }
   end

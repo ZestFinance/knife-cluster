@@ -4,6 +4,8 @@ require 'cluster'
 require 'knife-instance/zestknife'
 require 'cluster_config'
 require 'chef/knife/instance_create'
+require 'debugger'
+require 'chef/api_client'
 
 class Chef
   class Knife
@@ -46,7 +48,7 @@ class Chef
         end
 
         servers = ClusterConfig.env_config(@environment, region: @region, domain: @base_domain)
-
+        p servers.inspect
         raise "We'll be over EC2 limit of #{Cluster::EC2_LIMIT} and you'll be sad." +
                   " Delete unused instances first." if over_ec2_limit? servers.count, @region
 

@@ -19,3 +19,4 @@ doc/
 .idea/
 .chef/
 *~
+config/
