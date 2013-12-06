@@ -19,7 +19,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "chef"
+  spec.add_dependency "fog", "1.9.0"
+  spec.add_dependency "knife-instance"
 
   spec.add_development_dependency "bundler", "~> 1.4"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "debugger"
 end

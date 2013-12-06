@@ -5,6 +5,7 @@ class Cluster
   include ClusterHelper
   attr_reader :color, :environment, :region, :base_domain
   attr_accessor :cluster_databag
+  EC2_LIMIT = 200
 
   DATABAG_NOTFOUND = [
       Net::HTTPServerException,
